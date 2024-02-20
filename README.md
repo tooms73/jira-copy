@@ -4,9 +4,13 @@ When a ticket is open in the browser click the extension icon to copy the inform
 ## Settings
 It possible to customize some things on the extension, by right clicking the extension and choose options
 **Allowed url** is used to define on which pages the extension is allowed to run.
+
 **Command** is used to add a prepended command, most likely "git checkout -b"
+
 **Prefix** is used to add your own prefix to the jira string 
+
 **Suffix** is used to add your own suffix to the jira string
+
 
 [COMMAND] [PREFIX]-jira_ticket_number-jira_ticket_headline-[SUFFIX]
 
