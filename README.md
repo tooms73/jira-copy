@@ -4,7 +4,7 @@ When a ticket is open in the browser click the extension icon to copy the inform
 ## Settings
 It possible to customize some things on the extension, by right clicking the extension and choose options
 
-**Allowed url** is used to define on which pages the extension is allowed to run.
+**Allowed url** is used to define on which pages the extension is allowed to look for info.
 
 **Command** is used to add a prepended command, most likely "git checkout -b"
 
