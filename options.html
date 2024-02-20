@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>options</title>
+</head>
+<style>
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: grid;
+    margin-bottom: 10px;
+}
+
+</style>
+<body>
+    <div class="content">
+        <label for="allowedUrl">Url to jira page
+            <input id="allowedUrl" type="text" placeholder="allowed url">
+        </label>
+            <label for="cmd">Command to prepend the output
+            <input id="cmd" type="text" placeholder="command" value="git checkout -b">
+        </label>
+            <label for="prefix">Custom text to prefix
+            <input id="prefix" type="text" placeholder="prefix">
+        </label>
+            <label for="suffix">Custom to suffix
+            <input id="suffix" type="text" placeholder="suffix">
+        </label>
+    </div>
+    <div id="status"></div>
+    <button id="saveOptions">Save</button>
+    <script src="options.js"></script>
+</body>
+</html>

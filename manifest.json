@@ -1,0 +1,22 @@
+{
+    "name": "Jira branch copy",
+    "version": "1.0.0",
+    "description": "",
+    "manifest_version": 3,
+    "author": "",
+    "permissions": [
+        "scripting",
+        "activeTab",
+        "storage"
+    ],
+    "action": {
+        "default_title": "Jira Branch Copy"
+    },
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false
+    },
+    "background": {
+        "service_worker": "background.js"
+    }
+}
