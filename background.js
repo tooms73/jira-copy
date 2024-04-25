@@ -12,7 +12,7 @@ chrome.action.onClicked.addListener((tab) => {
             return "Info not present";
         }
 
-        const final = `${items.cmd ? items.cmd + ' ' : ''}${items.prefix ? items.prefix + '-' : ''}${encoded}${items.suffix ? '-' + items.suffix : ''}`;
+        const final = `${items.cmd ? items.cmd + ' ' : ''}${items.prefix ? items.prefix : ''}${encoded}${items.suffix ? items.suffix : ''}`;
         
         let res = undefined;
         await navigator.clipboard.writeText(final).catch((err) => {
