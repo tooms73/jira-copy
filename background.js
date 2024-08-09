@@ -5,7 +5,7 @@ chrome.action.onClicked.addListener((tab) => {
             return 'Url not allowed';
         }
         const ticket = document.querySelector('a[data-testid="issue.views.issue-base.foundation.breadcrumbs.current-issue.item"]')?.innerText;
-        const title = document.querySelector('h1')?.innerText;
+        const title = document.querySelector('[data-testid="issue.views.issue-base.foundation.summary.heading"]')?.innerText;
         const cleaned = `${ticket}-${title}`.replace(/[`~!@#$%^&*()_|+\=?;:'",.<>\{\}\[\]\\\/]/g, '').replace(/\s+/g, '-').toLowerCase();  
         const encoded = encodeURIComponent(cleaned); 
         if (ticket === undefined || title === undefined){
